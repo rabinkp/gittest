@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+</head>
+
+<style>
+    @media (min-width: 768px){
+.navbar-nav {
+    float: left;
+    margin: 0;
+    position: absolute;    left: 32%;
+}}
+.navbar-inverse {
+    background-color:white;
+    border-color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #000000;
+}
+.navbar-nav>li :hover{
+    color: black;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: initial;
+    font-size: 18px;
+}
+.enjoy-css{
+  background: linear-gradient(rgba(79, 96, 129, 0), rgba(12, 12, 12, 0.87)), url("blogimagesoap.webp") no-repeat ;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.textposition{
+    text-align: -webkit-center;
+    padding: 93px;
+    margin-top: -49rem;
+}
+.naturecolor{
+    font-size: 12px;
+    color: #fff5f5;
+    padding: 5px;
+    background-color: #8bc34a!important;
+    width: 70px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+    .textposition{
+    text-align: -webkit-center;
+    padding: 93px;
+    margin-top: -49rem;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .textposition{
+    text-align: -webkit-center;
+    padding: 30px;
+    margin-top: -37rem;
+}
+.notes{
+    font-size: 2rem !important;
+}
+}
+
+.loreum{
+    font-family: roboto;
+    line-height: 1.7;
+    color: #808080;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 4px 3px;
+    /* word-spacing: 0.2em; */
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+.card-title{
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 300;
+    /* word-spacing: 0.1em; */
+    /* letter-spacing: 1px; */
+    font-family: sans-serif;
+}
+.card-text{
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #706767a6;
+    /* letter-spacing: 0.9px; */
+
+}
+.sidebar{
+    display: table-cell;
+    vertical-align: middle;
+}
+.categories>li{
+    display: flex;
+    flex-direction: row;
+}
+.tags>li{
+    display: inline-block;
+    margin:0px 8px 4px 0px;
+    padding: 3px;
+    float:left;
+}
+.img{
+    height: 70px;
+    margin-right: 15px;
+}
+.texth5{
+    font-family: roboto;
+    margin-top: 5px;
+    color: #000000b0;
+    /* letter-spacing: 0.8px; */
+    /* word-spacing: 0.9px; */
+    /* font-family: sans-serif; */
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.tags>li>a{
+    display: block;
+    font-size: 16px;
+    padding: 2px 4px;
+    color: gray;
+    text-decoration: none;
+    font-family: roboto;
+}
+
+.tags>li>a:hover{
+    background-color: #2f89fc;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.cathover>span:hover{
+    color: black !important;
+}
+
+.categories>li{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bbbbbb6e;
+    font-family: roboto;
+}
+
+@media only screen and (max-width: 600px) {
+  .enjoy-cssss{
+    margin-top: 34rem;
+    height: 31rem !important;
+  }
+  #mobileview{
+    padding-top: 15rem;
+  }
+  .blog2{
+  position: absolute;
+    border: 0;
+    top: 15rem;
+    padding: 18px;
+    color: #d7d7d7;
+}
+.blog2>h2{
+    font-size: 18px;
+}
+.textblog>h2{
+    font-size: 18px;
+}
+.textblog{
+    padding: 18px !important;
+}
+
+.container-fluid{
+  height: auto !important;
+}
+.mobilepadding{
+    padding: 0px !important;
+}
+.conectusform{
+    margin-top: 45px;
+}
+.privacy, .privacy1{
+    margin-left: 24px !important;
+    
+}
+.privacybottom{
+    padding: 7px !important;
+}
+}
+@media only screen and (min-width: 600px) {
+  .enjoy-cssss{
+    margin-top: 0rem;
+    height: 31rem;
+  }
+  .blog2{
+  position: absolute;
+    border: 0;
+    top: 11rem;
+    padding: 25px;
+    color: #d7d7d7;
+}
+
+}
+.enjoy-css {
+  /* background-image: url("bookpen.webp");
+  background-color: rgba(0, 0, 0, 0.85);
+  background-blend-mode: multiply; */
+
+  background: linear-gradient(rgba(79, 96, 129, 0), rgba(12, 12, 12, 0.87)), url("bookpen.webp") no-repeat ;
+  background-size: cover  !important;
+  background-position: center !important;
+  border-radius: 4px;
+
+  /* background:url('bookpen.webp'), -webkit-linear-gradient(-90deg, rgba(249,249,249,1) 0, rgba(249,249,249,1) 25%, rgba(142,153,160,1) 100%);
+  background:url('bookpen.webp'), -moz-linear-gradient(180deg, rgba(249,249,249,1) 0, rgba(249,249,249,1) 25%, rgba(142,153,160,1) 100%);
+  background:url('bookpen.webp'), linear-gradient(180deg, rgba(249,249,249,1) 0, rgba(249,249,249,1) 25%, rgba(142,153,160,1) 100%);
+  */
+}
+.enjoy-cssss{
+  background: linear-gradient(rgba(79, 96, 129, 0), rgba(12, 12, 12, 0.87)), url("blogdogimage.webp") no-repeat ;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 4px;
+}
+.textblog{
+  position: absolute;
+    bottom: 0;
+    padding: 25px;
+    font-size: 18px;
+    z-index: 10;
+    color: #d7d7d7;
+}
+/* .blog2{
+  position: absolute;
+    border: 0;
+    top: 4rem;
+    padding: 25px;
+    color: #d7d7d7;
+} */
+.morerelatedposts{
+    font-family: 'Roboto';
+    font-size: 19px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8d898945;
+}
+
+#faicon{
+    font-size: 21px;
+    background: #76767682;
+    color: white;
+    width: 36px;
+    height: 39px;
+    /* vertical-align: middle; */
+    line-height: 1.8;
+    text-align: -webkit-center;
+    cursor: pointer;
+
+}
+.footliners {
+    width: 88px;
+    border: none;
+    height: 1px;
+    background-color: #d4d4d4;
+    margin-left: 14px;
+}
+.inputs{
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.navbar-toggle{
+    background-color: black;
+}
+.navbar-toggle>span{
+    background-color: white;
+}
+
+.navbar-brand{
+    padding: 4px 18px;
+}
+
+.nav>li>a{
+  FONT-SIZE: 15PX;
+    FONT-WEIGHT: 800;
+    FONT-FAMILY: 'ROBOTO';
+}
+.nav>li>a:focus{
+    color: black;
+}
+#contactus{
+    transition: all .5s ease-in-out;
+}
+.submitbutton{
+    outline: none;
+                 background: #fd5200;
+                 border-radius: 4px;
+                 height: 28px;
+                 border: none;
+                 padding: 0px;
+                 color: white;
+                 width: 82px;
+}
+.privacy, .privacy1{
+    margin-left: 78px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #ffffffb8;
+    text-decoration: none;
+    cursor: pointer;
+}
+.privacy:hover{
+    color:white ;
+}
+.privacy1:hover{
+    color:white ;
+}
+.navbar{
+    margin-bottom: 0px;
+}
+</style>
+<nav class="navbar Navbar navbar-light">
+    <div class="container-fluid" style="    padding: 14px 30px;  ">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <!-- <a>☰</a> -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="Spravatologos.jpg" width="60px;">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav ">
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">OUR SERVICES</a></li>
+          <li><a href="#">MEET OUR TEAM</a></li>
+          <li><a id="animate" href="#contactus">CONTACT US</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <section>
+      <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+        <div  class="enjoy-css " style="display: block; width: 100%;height: 280px; padding: 20em 0;" ></div>
+         <div class="container textposition" >
+             <span class="naturecolor">Nature</span><br>
+             <span class="notes" style="color: white; font-size: 6rem; line-height: 1.5; letter-spacing: 0.2em;">The AI magically removes moving objects from videos.</span>
+
+         </div>
+
+      </div>
+  </section>
+
+  <div class="container" style="padding-top: 80px;">
+      <div class="row" id="mobileview">
+          <div class="col-sm-8">
+            <div class="col-sm-12">
+                <p class="loreum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam quas inventore, ut iure iste modi eos adipisci ad ea itaque labore earum autem nobis et numquam, minima eius. Nam eius, non unde ut aut sunt eveniet rerum repellendus porro.</p>
+                <p class="loreum">Sint ab voluptates itaque, ipsum porro qui obcaecati cumque quas sit vel. Voluptatum provident id quis quo. Eveniet maiores perferendis officia veniam est laborum, expedita fuga doloribus natus repellendus dolorem ab similique sint eius cupiditate necessitatibus, magni nesciunt ex eos.</p>
+                <p class="loreum">Quis eius aspernatur, eaque culpa cumque reiciendis, nobis at earum assumenda similique ut? Aperiam vel aut, ex exercitationem eos consequuntur eaque culpa totam, deserunt, aspernatur quae eveniet hic provident ullam tempora error repudiandae sapiente illum rerum itaque voluptatem. Commodi, sequi.</p>
+            </div>
+            <div class="col-sm-12" style="padding-left: 0px; padding-right: 0px;">
+                <div class="col-sm-12" style="padding-bottom: 30px;">
+                  <img src="/Users/Medico/Desktop/Blog/bookpen.webp" style="width: 100%; border-radius: 4px;">
+                </div>
+                <div class="col-sm-6" style="padding-bottom: 30px;">
+                    <img src="/Users/Medico/Desktop/Blog/natureblog.webp" style="width: 100%;border-radius: 4px;">
+                </div>
+                <div class="col-sm-6" style="padding-bottom: 30px;">
+                    <img src="/Users/Medico/Desktop/Blog/blogimagesoap.webp" style="width: 100%;border-radius: 4px;">
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <p class="loreum">Quibusdam autem, quas molestias recusandae aperiam molestiae modi qui ipsam vel. Placeat tenetur veritatis tempore quos impedit dicta, error autem, quae sint inventore ipsa quidem. Quo voluptate quisquam reiciendis, minus, animi minima eum officia doloremque repellat eos, odio doloribus cum.</p>
+                <p class="loreum">Temporibus quo dolore veritatis doloribus delectus dolores perspiciatis recusandae ducimus, nisi quod, incidunt ut quaerat, magnam cupiditate. Aut, laboriosam magnam, nobis dolore fugiat impedit necessitatibus nisi cupiditate, quas repellat itaque molestias sit libero voluptas eveniet omnis illo ullam dolorem minima.</p>
+                <p class="loreum">Porro amet accusantium libero fugit totam, deserunt ipsa, dolorem, vero expedita illo similique saepe nisi deleniti. Cumque, laboriosam, porro! Facilis voluptatem sequi nulla quidem, provident eius quos pariatur maxime sapiente illo nostrum quibusdam aliquid fugiat! Earum quod fuga id officia.</p>
+                <p class="loreum">Illo magnam at dolore ad enim fugiat ut maxime facilis autem, nulla cumque quis commodi eos nisi unde soluta, ipsa eius aspernatur sint atque! Nihil, eveniet illo ea, mollitia fuga accusamus dolor dolorem perspiciatis rerum hic, consectetur error rem aspernatur!</p>
+                <p class="loreum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus magni explicabo id molestiae, minima quas assumenda consectetur, nobis neque rem, incidunt quam tempore perferendis provident obcaecati sapiente, animi vel expedita omnis quae ipsa! Obcaecati eligendi sed odio labore vero reiciendis facere accusamus molestias eaque impedit, consequuntur quae fuga vitae fugit?</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card" style="width: 100%; text-align: center;">
+                <img class="card-img-top" src="/Users/Medico/Desktop/Blog/natureblog.webp" style="width:140px;height: 140px; border-radius: 50%; " alt="Card image cap">
+                <div class="card-body" style="padding: 40px;">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+<!-- <div class="col-sm-12">
+    <h4 style="font-weight: 300;    letter-spacing: 1.4px;    text-align: center;">Popular Posts</h4>
+    <hr style="border-bottom: 1px solid #dddbdb;"></hr>
+</div> -->
+<!-- <div class="col-sm-12" style="display: -webkit-inline-box;">
+    <img src="/Users/Medico/Desktop/Blog/bookpen.webp" style="width: 100px; height: 50px;"> &nbsp;
+    <h5>There's is a new cool way for Men to Wear Socks and Sandals</h5>
+</div> -->
+
+<div class="sidebar">
+    <h4 style="font-family: roboto; font-weight: 300;text-align: center;padding: 18px;margin-left: 18px;border-bottom: 1px solid #bbbbbb6e;">Popular posts</h4>
+
+    <ul style="list-style: none; margin-bottom: 30px; margin-top: 20px; padding-left: 20px;">
+        <li>
+            <a href="" style="    display: flex;   flex-direction: row; text-decoration:none !important;">
+            <img src="/Users/Medico/Desktop/Blog/bookpen.webp" class="img">
+            <div class="text">
+                 <h5 class="texth5">There's is a new cool way for Men to Wear Socks and Sandals</h5>
+                 <span style="color: #5a55557a; font-size: 16px;">October 11th, 2021</span>
+            </div>
+        </a>
+        </li>
+    </ul>
+    <ul style="list-style: none;margin-bottom: 30px;padding-left: 20px;">
+        <li>
+            <a href="" style="    display: flex;   flex-direction: row; text-decoration:none !important;">
+            <img src="/Users/Medico/Desktop/Blog/blogimagesoap.webp" class="img">
+            <div class="text">
+                 <h5 class="texth5">There's is a new cool way for Men to Wear Socks and Sandals</h5>
+                 <span style="color: #5a55557a; font-size: 16px;">October 11th, 2021</span>
+            </div>
+        </a>
+        </li>
+    </ul>
+    <ul style="list-style: none;padding-left: 20px;">
+        <li>
+            <a href="" style="    display: flex;   flex-direction: row; text-decoration:none !important;">
+            <img src="/Users/Medico/Desktop/Blog/natureblog.webp" class="img">
+            <div class="text">
+                 <h5 class="texth5">There's is a new cool way for Men to Wear Socks and Sandals</h5>
+                 <span style="color: #5a55557a; font-size: 16px;">October 11th, 2021</span>
+            </div>
+        </a>
+        </li>
+    </ul>
+</div>
+
+<!-- <div class="col-sm-12" style="padding-top: 40px;">
+    <h4 style="font-weight: 300;    letter-spacing: 1.4px;    text-align: center;">Categories</h4>
+    <hr style="border-bottom: 1px solid #dddbdb;"></hr>
+</div> -->
+<div style="margin-left: 18px; padding-top: 40px;">
+    <h4 style="font-family: roboto; padding-bottom: 15px; margin-bottom: 13px; font-weight: 300;text-align: center;border-bottom: 1px solid #bbbbbb6e;">Categories</h4>
+    <ul class="categories" style="padding: 0px;">
+        <li >
+            <a class="cathover" href="" style="color: #2f89fc; width: 100% !important;    font-size: 16px;">
+                Food
+                <span  style="position: absolute; right: 30px;     color: #877d7d8c;">
+                    (12)
+                </span>
+            </a>
+        </li>
+        <li >
+            <a class="cathover" href="" style="color: #2f89fc; width: 100% !important;     font-size: 16px;">
+                Travel
+                <span  style="position: absolute; right: 30px;     color: #877d7d8c;">
+                    (20)
+                </span>
+            </a>
+        </li>
+        <li >
+            <a class="cathover" href="" style="color: #2f89fc; width: 100% !important;    font-size: 16px; ">
+                Lifestyle
+                <span  style="position: absolute; right: 30px;     color: #877d7d8c;">
+                    (36)
+                </span>
+            </a>
+        </li>
+        <li >
+            <a class="cathover" href="" style="color: #2f89fc; width: 100% !important;    font-size: 16px;     ">
+                Business
+                <span  style="position: absolute; right: 30px;     color: #877d7d8c;">
+                    (24)
+                </span>
+            </a>
+        </li>
+        <li >
+            <a class="cathover" href="" style="color: #2f89fc; width: 100% !important;    font-size: 16px;    ">
+                Adventure
+                <span  style="position: absolute; right: 30px;     color: #877d7d8c;">
+                    (32)
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<div style="margin-left: 18px; padding-top: 40px;">
+    <h4 style="font-family: roboto; padding-bottom: 15px; margin-bottom: 13px; font-weight: 300;text-align: center;border-bottom: 1px solid #bbbbbb6e;">Tags</h4>
+<ul class="tags" style="padding: 0px;">
+    <li>
+        <a href=""> Travel</a>
+    </li>
+    <li>
+        <a href="">Adventure</a>
+    </li>
+    <li>
+        <a href="">Food</a>
+    </li>
+    <li>
+        <a href="">Lifestyle</a>
+    </li>
+    <li>
+        <a href="">Business</a>
+    </li>
+    <li>
+        <a href="">Freelancing</a>
+    </li>
+    <li>
+        <a href="">Explore</a>
+    </li>
+
+</ul>
+</div>
+
+              <!-- <img src="/Users/Medico/Desktop/Manik.jpg" style="width:100px; border-radius: 50%; margin-left: 18rem;"> -->
+          </div>
+      </div>
+      <div class="col-sm-12">
+          <h4 class="morerelatedposts">More Related Posts</h4>
+        <div class="" style="padding-top: 20px;">
+            <div class="col-sm-6" style="padding: 0px;height: 280px;">
+                 <!-- <img class="card-img-top" src="/Users/Medico/Desktop/Imagesforblog/bookpen.webp" style="width: 100%;background-size: cover; background-position: center;"> -->
+                 <!-- <a href="bookpen.webp" class=".enjoy-css " style=" background-image: url('bookpen.webp'),-webkit-linear-gradient( top, transparent, black);display: block; width: 100%;height: 250px;background-size: cover; background-position: center;"></a> -->
+                <div class="">
+                 <div class="col-sm-12" style="margin-bottom: 30px;">
+                   <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="enjoy-css " style="display: block; width: 100%;height: 280px;">
+                   <div class="textblog" style="cursor: pointer;">
+                     <h2 >The Ai Magically Removes moving objects from Videos</h2>
+                     <span style="    color: darkgrey;  font-size: 15px;">October 8th, 2021</span>
+                   </div>
+                 </a>
+                  </div>
+                  <div class="col-sm-12">
+                   <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="enjoy-css " style="display: block; width: 100%;height: 280px;background-size: cover; background-position: center;">
+                   <div class="blog2">
+                     <h2 href="/Users/Medico/Desktop/Blog/blogpost.html">The Ai Magically Removes moving objects from Videos</h2>
+                     <span style="color: darkgrey;  font-size: 15px;">October 8th, 2021</span>
+                   </div>
+                 </a>
+                  </div>
+                </div>
+
+
+
+               </div>
+               <div class="col-sm-6">
+                 <div>
+                   <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="enjoy-cssss" style="display: block; width: 100%;height: 59rem;background-size: cover; background-position: center;">
+                   <div class="textblog">
+                     <h2 href="/Users/Medico/Desktop/Blog/blogpost.html">The Ai Magically Removes moving objects from Videos</h2>
+                     <span style="    color: darkgrey;  font-size: 15px;">October 8th, 2021</span>
+                   </div>
+                 </a>
+                  </div>
+               </div>
+               </div>
+      </div>
+
+  </div>
+
+  <section id="contactus" style="padding-top: 120px;">
+    <div class="container-fluid" style=" background-color: rgba(0, 0, 0, 0.877);">
+   
+
+         <div class="row mobilepadding" style="padding: 80px;">
+          <div class=" col-lg-4">
+     <h4 style="padding-left: 13px;color: #ffffffbf;">About us</h4>
+     <hr class="footliners">
+     <p class="col-sm-12" style="font-family: 'roboto';font-size: 16px;     color: #ffffffbf;">We are one stop solution for SPRAVATO® reimbursements.
+          We provide comprehensive solution to ensure that you get
+           paid for each SPRAVATO® treatment done. We believe in dealing
+           with utmost professionalism and also with transparency at
+           every step to ensure maximum profitability for our clients.</p>
+
+          </div>
+          <div class=" col-lg-4">
+              
+              <img style="    margin-top: 68px; margin-left: 50px;" src="/Users/Medico/Desktop/Blog/Maps.png">
+              <div style="position: relative; margin-top: -210px;">
+                <h4 style="padding-left: 13px;color: #ffffffbf;">Our Address</h4>
+                <hr class="footliners">
+                 <span style="    display: flex;    flex-direction: row;    margin-left: 14px;  ">
+                    <i class="fa fa-map-marker" aria-hidden="true" id="faicon"></i>
+                    <p style=" font-family: 'roboto'; font-size: 16px;     margin: 0px 10px 10px;   color: #ffffffbf;">Suite # 222, One Harbison Way,<br>
+                        Brookside Park, Columbia, SC - 29212.
+                        </p>
+                 </span>
+   
+                 <span style="    display: flex;    margin-left: 14px;    flex-direction: row; ">
+                    <i class="fa fa-phone" aria-hidden="true" id="faicon"></i>
+                    <p style="font-family: 'roboto'; font-size: 16px;      margin: 0px 10px 10px;      color: #ffffffbf;">(803) 932-9624<br>
+                        (803) 629-0770
+                        </p>
+                 </span>
+   
+                 <span style="    display: flex;      margin-left: 14px;  flex-direction: row; ">
+                    <i class="fa fa-globe" aria-hidden="true" id="faicon"></i>
+                    <p style="  font-family: 'roboto'; font-size: 16px;    margin: 0px 10px 10px;       color: #ffffffbf;">spravatospecialists@practolytics.com<br>
+                        www.spravatobilling.com
+                        </p>
+                 </span>
+              </div>
+            
+
+
+         </div>
+         <div class="col-lg-4 conectusform">
+             <h4 style="padding-left: 13px;color: #ffffffbf;">Connect with us</h4>
+             <hr class="footliners">
+             <form style="    padding-left: 14px;padding-right: 14px;">
+                 <input class="inputs"  type="text" id="name" name="fname" placeholder="Your Name" autocomplete="off"><br><br>
+                 <input class="inputs"  type="text" id="email" name="email" placeholder="Your Email"autocomplete="off"><br><br>
+                 <textarea class="inputs"style="resize: none; height: 60px;" placeholder="Your Comments"autocomplete="off"></textarea>
+                 <button class="submitbutton">Submit</button>
+             </form>
+         </div>
+      </div>
+
+     </div>
+  </section>
+  <section>
+      <div class="container-fluid privacybottom" style="padding: 24px; background-color: black; display: flex; flex-direction: row;">
+        <a class="privacy">2021 © All Rights Reserved.</a>
+       <a class="privacy1" href=""> Privacy Policy</a>
+      </div>
+  </section>
+  <a id="backtotop"><i style="    font-size: 30px;line-height: 1.2;text-align: center;" class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+  <script>
+  
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
+var btn = $('#backtotop');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+  </script>
+
+  
+<style>
+    #backtotop {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0px 0px 6px #332f2f;
+  cursor: pointer;
+}
+/* #backtotop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 38px;
+  color: rgb(7, 7, 7);
+  border-bottom: 1px solid white;
+} */
+
+#backtotop::after:hover{
+  border-bottom: 1px solid white;
+}
+#backtotop:hover {
+  cursor: pointer;
+  background-color: rgb(255, 253, 253);
+  border-bottom: 1px solid white;
+}
+#backtotop:active {
+  background-color: rgb(255, 255, 255);
+}
+#backtotop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+
+@media (min-width: 500px) {
+  
+  #backtotop {
+    margin: 8px;
+  }
+}
+  </style>

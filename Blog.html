@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+<style>
+    @media (min-width: 768px){
+.navbar-nav {
+    float: left;
+    margin: 0;
+    position: absolute;    left: 32%;
+}}
+.navbar-inverse {
+    background-color:white;
+    border-color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #000000;
+}
+.navbar-nav>li :hover{
+    color: black;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: initial;
+    font-size: 18px;
+}
+#faicon{
+    font-size: 21px;
+    background: #76767682;
+    color: white;
+    width: 36px;
+    height: 39px;
+    /* vertical-align: middle; */
+    line-height: 1.8;
+    text-align: -webkit-center;
+    cursor: pointer;
+
+}
+.footliners {
+    width: 88px;
+    border: none;
+    height: 1px;
+    background-color: #d4d4d4;
+    margin-left: 14px;
+}
+.inputs{
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+}
+.inside{
+  position: absolute;
+    top: 85px;
+    padding: 21px;
+    z-index: 10;
+}
+.text{
+  position: absolute;
+    bottom: 0;
+    padding: 25px;
+    font-size: 18px;
+    z-index: 10;
+    color: #d7d7d7;
+}
+.blog2{
+  position: absolute;
+    border: 0;
+    top: 16rem;
+    padding: 25px;
+    color: #d7d7d7;
+}
+h2{
+  font-size: 18px;
+}
+
+.enjoy-css {
+  /* background-image: url("bookpen.webp");
+  background-color: rgba(0, 0, 0, 0.85); 
+  background-blend-mode: multiply; */
+
+  background: linear-gradient(rgba(79, 96, 129, 0), rgba(12, 12, 12, 0.87)), url("bookpen.webp") no-repeat ;
+  background-size: cover  !important;
+  background-position: center !important;
+  border-radius: 4px;
+  
+  /* background:url('bookpen.webp'), -webkit-linear-gradient(-90deg, rgba(249,249,249,1) 0, rgba(249,249,249,1) 25%, rgba(142,153,160,1) 100%);
+  background:url('bookpen.webp'), -moz-linear-gradient(180deg, rgba(249,249,249,1) 0, rgba(249,249,249,1) 25%, rgba(142,153,160,1) 100%);
+  background:url('bookpen.webp'), linear-gradient(180deg, rgba(249,249,249,1) 0, rgba(249,249,249,1) 25%, rgba(142,153,160,1) 100%);
+  */
+}
+.enjoy-cssss{
+  background: linear-gradient(rgba(79, 96, 129, 0), rgba(12, 12, 12, 0.87)), url("blogdogimage.webp") no-repeat ;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 600px) {
+  .enjoy-cssss{
+    margin-top: 34rem;
+    height: 31rem !important;
+  }
+
+  .mobilepadding{
+    padding: 0px !important;
+}
+
+.privacy, .privacy1{
+    margin-left: 24px !important;
+    
+}
+.privacybottom{
+    padding: 7px !important;
+}
+}
+@media only screen and (min-width: 600px) {
+  .enjoy-cssss{
+    margin-top: 0rem;
+    height: 31rem;
+  }
+}
+.Category{
+  display: inline-block;
+    padding: 2px 10px;
+    letter-spacing: 0.2em;
+    background-color: #6c757d!important;
+    color: white;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.card-body{
+  padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+.card-title{
+  font-size: 20px;
+    font-weight: 400;
+    font-family: roboto;
+    line-height: 1.5em;
+}
+
+.card-text{
+  color: #565050c9;
+    font-size: 14px;
+    font-family: roboto;
+    line-height: 1.7;
+}
+.readmore{
+  padding: 0px;
+  font-size: 16px;
+  color: #2f89fc;
+}
+.sameline{
+  display: -webkit-inline-box;
+    padding-left: 12px;
+    font-size: 13px;
+    color: #45484aa1;
+}
+.card{
+  padding-top: 60px;
+}
+.navbar-toggle{
+    background-color: black;
+}
+.navbar-toggle>span{
+    background-color: white;
+}
+.nav>li>a{
+  FONT-SIZE: 15PX;
+    FONT-WEIGHT: 800;
+    FONT-FAMILY: 'ROBOTO';
+}
+.submitbutton{
+    outline: none;
+                 background: #fd5200;
+                 border-radius: 4px;
+                 height: 28px;
+                 border: none;
+                 padding: 0px;
+                 color: white;
+                 width: 82px;
+}
+
+.privacy, .privacy1{
+    margin-left: 78px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #ffffffb8;
+    text-decoration: none;
+    cursor: pointer;
+}
+.privacy:hover{
+    color:white ;
+}
+.privacy1:hover{
+    color:white ;
+} 
+</style>
+<nav class="navbar Navbar navbar-light">
+  <div class="container-fluid" style="    padding: 14px 30px;  ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="Spravatologos.jpg" width="60px;">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav ">
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">OUR SERVICES</a></li>
+        <li><a href="#">MEET OUR TEAM</a></li>
+        <li><a href="#contactus">CONTACT US</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<section>
+  <div class="container">
+    <div class="">
+ <div class="col-sm-6" style="padding: 0px;height: 280px;">
+      <!-- <img class="card-img-top" src="/Users/Medico/Desktop/Imagesforblog/bookpen.webp" style="width: 100%;background-size: cover; background-position: center;"> -->
+      <!-- <a href="bookpen.webp" class=".enjoy-css " style=" background-image: url('bookpen.webp'),-webkit-linear-gradient( top, transparent, black);display: block; width: 100%;height: 250px;background-size: cover; background-position: center;"></a> -->
+     <div class="">
+      <div class="col-sm-12" style="margin-bottom: 30px;">
+        <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="enjoy-css " style="display: block; width: 100%;height: 280px;">
+        <div class="text" style="cursor: pointer;">
+          <h2 >The Ai Magically Removes moving objects from Videos</h2>
+          <span style="    color: darkgrey;  font-size: 15px;">October 8th, 2021</span>
+        </div>
+      </a>
+       </div>
+       <div class="col-sm-12">
+        <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="enjoy-css " style="display: block; width: 100%;height: 280px;background-size: cover; background-position: center;">
+        <div class="blog2">
+          <h2 href="/Users/Medico/Desktop/Blog/blogpost.html">The Ai Magically Removes moving objects from Videos</h2>
+          <span style="color: darkgrey;  font-size: 15px;">October 8th, 2021</span>
+        </div>
+      </a>
+       </div>
+     </div>
+     
+     
+  
+    </div>
+    <div class="col-sm-6">
+      <div>
+        <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="enjoy-cssss" style="display: block; width: 100%;height: 59rem;background-size: cover; background-position: center;">
+        <div class="text">
+          <h2 href="/Users/Medico/Desktop/Blog/blogpost.html">The Ai Magically Removes moving objects from Videos</h2>
+          <span style="    color: darkgrey;  font-size: 15px;">October 8th, 2021</span>
+        </div>
+      </a>
+       </div>
+    </div>
+    </div>
+   
+    
+  </div>
+</section>
+
+
+<section style="padding-top: 80px;">
+  <div class="container">
+    <h3>Recent posts</h3>
+    <div class="col-sm-12" style="    padding-right: 0px;   padding-left: 0px;">
+      <div class="col-sm-4">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="/Users/Medico/Desktop/blog/bookpen.webp" alt="Card image cap" style="width: 100%;border-radius: 4px;">
+          <div class="card-body">
+            <span class="Category">Politics</span>
+            <div style="padding-top: 20px;">
+              <img src="/Users/Medico/Desktop/blog/Manik.jpg" style="width:50px; border-radius: 50%;">
+              <span class="sameline">By <p style="color: #060606b8;letter-spacing: 0.4px;">&nbsp; Carrol Atkinson  </p>&nbsp; -  July 19, 2019</span>
+            </div>
+            <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+            <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="readmore">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="/Users/Medico/Desktop/blog/blogimagesoap.webp" alt="Card image cap" style="width: 100%; border-radius: 4px;">
+          <div class="card-body">
+            <span class="Category" style="    background-color: #4ca746 !important;">Nature</span>
+            <div style="padding-top: 20px;">
+              <img src="/Users/Medico/Desktop/blog/Manik.jpg" style="width:50px; border-radius: 50%;">
+              <span class="sameline">By <p style="color: #060606b8;letter-spacing: 0.4px;">&nbsp; Carrol Atkinson  </p>&nbsp; -  July 19, 2019</span>
+            </div>
+            <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+            <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="readmore">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="/Users/Medico/Desktop/blog/natureblog.webp" alt="Card image cap" style="width: 100%;border-radius: 4px;">
+          <div class="card-body">
+            <span class="Category" style="background-color:#f89d13!important">Travel</span>
+            <div style="padding-top: 20px;">
+              <img src="/Users/Medico/Desktop/blog/Manik.jpg" style="width:50px; border-radius: 50%;">
+              <span class="sameline">By <p style="color: #060606b8;letter-spacing: 0.4px;">&nbsp; Carrol Atkinson  </p>&nbsp; -  July 19, 2019</span>
+            </div>
+            <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+            <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="readmore">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12" style=" padding-top: 50px;   padding-right: 0px;   padding-left: 0px;">
+      <div class="col-sm-4">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="/Users/Medico/Desktop/blog/bookpen.webp" alt="Card image cap" style="width: 100%;border-radius: 4px;">
+          <div class="card-body">
+            <span class="Category">Politics</span>
+            <div style="padding-top: 20px;">
+              <img src="/Users/Medico/Desktop/blog/Manik.jpg" style="width:50px; border-radius: 50%;">
+              <span class="sameline">By <p style="color: #060606b8;letter-spacing: 0.4px;">&nbsp; Carrol Atkinson  </p>&nbsp; -  July 19, 2019</span>
+            </div>
+
+            <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+            <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="readmore">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="/Users/Medico/Desktop/blog/blogimagesoap.webp" alt="Card image cap" style="width: 100%; border-radius: 4px;">
+          <div class="card-body">
+            <span class="Category" style="    background-color: #4ca746 !important;">Nature</span>
+            <div style="padding-top: 20px;">
+              <img src="/Users/Medico/Desktop/blog/Manik.jpg" style="width:50px; border-radius: 50%;">
+              <span class="sameline">By <p style="color: #060606b8;letter-spacing: 0.4px;">&nbsp; Carrol Atkinson  </p>&nbsp; -  July 19, 2019</span>
+            </div>
+            <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+            <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="readmore">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="width: 100%;">
+          <img class="card-img-top" src="/Users/Medico/Desktop/blog/natureblog.webp" alt="Card image cap" style="width: 100%;border-radius: 4px;">
+          <div class="card-body">
+            <span class="Category" style="background-color:#f89d13!important">Travel</span>
+            <div style="padding-top: 20px;">
+              <img src="/Users/Medico/Desktop/blog/Manik.jpg" style="width:50px; border-radius: 50%;">
+              <span class="sameline">By <p style="color: #060606b8;letter-spacing: 0.4px;">&nbsp; Carrol Atkinson  </p>&nbsp; -  July 19, 2019</span>
+            </div>
+            <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+            <a href="/Users/Medico/Desktop/Blog/blogpost.html" class="readmore">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- <section id="contactus" style="padding-top: 120px;">
+  <div class="container-fluid" id="contactus" style="background-color: rgb(0, 0, 0);">
+       <div class="row">
+        <div class="col-sm-4">
+   <h4 style="padding-left: 13px;color: #ffffffbf;">About us</h4>
+   <hr class="footliners">
+   <p class="col-sm-10" style="font-family: sans-serif;     font-weight: bolder;color: #ffffffbf;">We are one stop solution for SPRAVATO® reimbursements.
+        We provide comprehensive solution to ensure that you get
+         paid for each SPRAVATO® treatment done. We believe in dealing 
+         with utmost professionalism and also with transparency at 
+         every step to ensure maximum profitability for our clients.</p>
+   
+        </div>
+        <div class="col-sm-4">
+           <h4 style="padding-left: 13px;color: #ffffffbf;">Our Address</h4>
+           <hr class="footliners">
+            <span style="    display: flex;    flex-direction: row;    margin-left: 14px;    padding-bottom: 10px; ">
+               <i class="fa fa-map-marker" aria-hidden="true" id="faicon"></i>
+               <p style="    margin: 0px 10px 10px;    font-weight: bolder;    color: #ffffffbf;">Suite # 222, One Harbison Way,<br>
+                   Brookside Park, Columbia, SC - 29212.
+                   </p>
+            </span>
+               
+            <span style="    display: flex;    margin-left: 14px;    flex-direction: row; padding-bottom: 10px;  ">
+               <i class="fa fa-phone" aria-hidden="true" id="faicon"></i>
+               <p style="    margin: 0px 10px 10px;    font-weight: bolder;    color: #ffffffbf;">(803) 932-9624<br>
+                   (803) 629-0770
+                   </p>
+            </span>
+   
+            <span style="    display: flex;      margin-left: 14px;  flex-direction: row; padding-bottom: 10px;  ">
+               <i class="fa fa-globe" aria-hidden="true" id="faicon"></i>
+               <p style="    margin: 0px 10px 10px;     font-weight: bolder;    color: #ffffffbf;">spravatospecialists@practolytics.com<br>
+                   www.spravatobilling.com
+                   </p>
+            </span>
+               
+           
+       </div>
+       <div class="col-sm-4">
+           <h4 style="padding-left: 13px;color: #ffffffbf;">Connect with us</h4>
+           <hr class="footliners">  
+           <form style="    padding-left: 14px;padding-right: 14px;">
+               <input class="inputs"  type="text" id="name" name="fname" placeholder="Your Name" autocomplete="off"><br><br>
+               <input class="inputs"  type="text" id="email" name="email" placeholder="Your Email"autocomplete="off"><br><br>
+               <textarea class="inputs"style="resize: none; height: 60px;" placeholder="Your Comments"autocomplete="off"></textarea>
+           </form>
+       </div>
+    </div>
+       
+   </div>
+</section> -->
+
+
+<section id="contactus" style="padding-top: 120px;">
+  <div class="container-fluid" style=" background-color: rgba(0, 0, 0, 0.877);">
+    <!-- <div class="row mobilepadding" style="padding:60px;"> -->
+
+       <div class="row mobilepadding" style="padding: 80px;">
+        <div class="col-sm-4">
+   <h4 style="padding-left: 13px;color: #ffffffbf;">About us</h4>
+   <hr class="footliners">
+   <p class="col-sm-12" style="font-family: 'roboto';font-size: 16px;     color: #ffffffbf;">We are one stop solution for SPRAVATO® reimbursements.
+        We provide comprehensive solution to ensure that you get
+         paid for each SPRAVATO® treatment done. We believe in dealing
+         with utmost professionalism and also with transparency at
+         every step to ensure maximum profitability for our clients.</p>
+
+        </div>
+        <div class="col-sm-4">
+            <!-- <div style="height: 150px;width: 100%;background-image: url('Maps.png');background-repeat: no-repeat;position: absolute;top: 65px;
+            left: 65px;"></div> -->
+            <img style="    margin-top: 68px; margin-left: 50px;" src="/Users/Medico/Desktop/Blog/Maps.png">
+            <div style="position: relative; margin-top: -210px;"">
+              <h4 style="padding-left: 13px;color: #ffffffbf;">Our Address</h4>
+              <hr class="footliners">
+               <span style="    display: flex;    flex-direction: row;    margin-left: 14px;  ">
+                  <i class="fa fa-map-marker" aria-hidden="true" id="faicon"></i>
+                  <p style=" font-family: 'roboto'; font-size: 16px;     margin: 0px 10px 10px;   color: #ffffffbf;">Suite # 222, One Harbison Way,<br>
+                      Brookside Park, Columbia, SC - 29212.
+                      </p>
+               </span>
+ 
+               <span style="    display: flex;    margin-left: 14px;    flex-direction: row; ">
+                  <i class="fa fa-phone" aria-hidden="true" id="faicon"></i>
+                  <p style="font-family: 'roboto'; font-size: 16px;      margin: 0px 10px 10px;      color: #ffffffbf;">(803) 932-9624<br>
+                      (803) 629-0770
+                      </p>
+               </span>
+ 
+               <span style="    display: flex;      margin-left: 14px;  flex-direction: row; ">
+                  <i class="fa fa-globe" aria-hidden="true" id="faicon"></i>
+                  <p style="  font-family: 'roboto'; font-size: 16px;    margin: 0px 10px 10px;       color: #ffffffbf;">spravatospecialists@practolytics.com<br>
+                      www.spravatobilling.com
+                      </p>
+               </span>
+            </div>
+          
+
+
+       </div>
+       <div class="col-sm-4 conectusform">
+           <h4 style="padding-left: 13px;color: #ffffffbf;">Connect with us</h4>
+           <hr class="footliners">
+           <form style="    padding-left: 14px;padding-right: 14px;">
+               <input class="inputs"  type="text" id="name" name="fname" placeholder="Your Name" autocomplete="off"><br><br>
+               <input class="inputs"  type="text" id="email" name="email" placeholder="Your Email"autocomplete="off"><br><br>
+               <textarea class="inputs"style="resize: none; height: 60px;" placeholder="Your Comments"autocomplete="off"></textarea>
+               <button class="submitbutton">Submit</button>
+           </form>
+       </div>
+    </div>
+
+   </div>
+</section>
+
+<section>
+  <div class="container-fluid privacybottom" style="padding: 24px; background-color: black; display: flex; flex-direction: row;">
+    <a class="privacy">2021 © All Rights Reserved.</a>
+   <a class="privacy1" href=""> Privacy Policy</a>
+  </div>
+</section>
+<a id="backtotop"></a>
+
+
+
+</body>
+</html>
+<script>
+
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
+var btn = $('#backtotop');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+
+<style>
+  #backtotop {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0px 0px 6px #332f2f;
+}
+#backtotop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 38px;
+  color: rgb(7, 7, 7);
+  border-bottom: 1px solid white;
+}
+
+#backtotop::after:hover{
+  border-bottom: 1px solid white;
+}
+#backtotop:hover {
+  cursor: pointer;
+  background-color: rgb(255, 253, 253);
+  border-bottom: 1px solid white;
+}
+#backtotop:active {
+  background-color: rgb(255, 255, 255);
+}
+#backtotop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+
+@media (min-width: 500px) {
+  
+  #backtotop {
+    margin: 8px;
+  }
+}
+
+</style>
